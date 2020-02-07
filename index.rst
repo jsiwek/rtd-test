@@ -1,7 +1,7 @@
 Welcome to RTD Test's documentation!
 ====================================
 
-This is documentation for v3.0.2.
+This is documentation for v3.0.3.
 
 .. toctree::
    :maxdepth: 2
