@@ -1,0 +1,4 @@
+Foo
+===
+
+Example page

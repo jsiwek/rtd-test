@@ -7,6 +7,8 @@ This is the master branch's documentation.
    :maxdepth: 2
    :caption: Contents:
 
+   foo
+
 Indices and tables
 ==================
 
