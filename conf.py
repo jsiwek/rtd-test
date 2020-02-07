@@ -44,14 +44,15 @@ version = u"source"
 
 try:
     import git
+    import re
 
     repo = git.Repo(os.path.abspath('.'))
     version = u"git/master"
-    tag = [str(t) for t in repo.tags if t.commit == repo.head.commit]
+    tags = [str(t) for t in repo.tags if t.commit == repo.head.commit]
 
-    for t in tag:
-        if t != "stable":
-            version = t
+    for tag in tags:
+        if re.match('v\d+\.\d+(\.\d+)?', tag):
+            version = tag
             break
 
 except:
