@@ -2,3 +2,4 @@ Foo
 ===
 
 Example page
+testing
