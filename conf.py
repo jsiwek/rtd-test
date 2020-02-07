@@ -49,8 +49,10 @@ try:
     version = u"git/master"
     tag = [str(t) for t in repo.tags if t.commit == repo.head.commit]
 
-    if tag:
-        version = tag[0]
+    for t in tag:
+        if t != "stable":
+            version = t
+            break
 
 except:
     pass
